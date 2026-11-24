@@ -48,9 +48,9 @@ st.markdown("""
 
 @st.cache_data
 def load_data():
-    data_path = os.path.join("data", "processed", "cleaned_housing_prices.csv")
+    data_path = os.path.join("Data", "processed", "cleaned_housing_prices.csv")
     if not os.path.exists(data_path):
-        data_path = os.path.join("..", "data", "processed", "cleaned_housing_prices.csv")
+        data_path = os.path.join("..", "Data", "processed", "cleaned_housing_prices.csv")
     return pd.read_csv(data_path)
 
 @st.cache_resource
